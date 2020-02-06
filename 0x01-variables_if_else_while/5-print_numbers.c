@@ -1,19 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - main block
+ * Description: Print all numbers of base 10, starting from 0.
+ * Return: 0
  */
-
 int main(void)
 {
-int i = 0;
+int a;
 
-while (i < 10)
+for (a = 0; a < 10; a++)
 {
-printf("%d ", i);
-i++;
+printf("%i", a);
 }
 putchar('\n');
 

@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * print_alphabet - check the code for Holberton School students.
+ * Description: it prints the alphabet, in lowercase, followed by a new line
  * Return: Always 0.
  */
 
@@ -17,4 +17,5 @@ _putchar(c);
 c++;
 }
 _putchar('\n');
+/*return ();*/
 }

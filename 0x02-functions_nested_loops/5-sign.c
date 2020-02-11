@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _islower - writes the character c to stdout
+ * print_sign - writes the character c to stdout
  * @n: The character to print
  *
  * Return: On success 1.

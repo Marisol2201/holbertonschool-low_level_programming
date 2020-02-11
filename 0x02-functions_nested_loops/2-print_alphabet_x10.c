@@ -1,26 +1,22 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet_x10 - it prints 10 times the alphabet, in lowercase
  *
  * Return: Always 0.
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-  char c,d;
+char c;
+int d;
 
-  c = 'a';
-  while (c <= 'z')
-    {
-      _putchar(c);
-      c++;
-    }
-  _putchar('\n');
-
-  for (d = c; d < 11; d++)
-    {
-      putchar (d);
-    }
-  return (0);
+for (d = 0; d < 10; d++)
+{
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
+}
+_putchar('\n');
+}
 }

@@ -10,7 +10,6 @@
 int _isdigit(int c)
 {
 	char p;
-	int x;
 
 	x = (0);
 	for (p = '0'; p < '9'; p++)
@@ -19,9 +18,6 @@ int _isdigit(int c)
 		{
 			return (1);
 		}
-		else
-		{
-		}
 	}
-	return (x);
+	return (0);
 }

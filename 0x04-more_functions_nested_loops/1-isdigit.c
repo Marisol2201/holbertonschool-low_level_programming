@@ -1,26 +1,25 @@
 #include <stdio.h>
 
 /**
- * _isupper - writes the character c to stdout
+ * _isdigit - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and error is set appropriately.
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
+	char p;
 
-char p;
-
-for (p = 'A'; p <= 'Z'; p++)
+	for (p = '0'; p < '9'; p++)
 	{
-	if (c == p)
+		if (c == p)
 		{
-		return (1);
+			return (1);
 		}
-	else
-	{
+		else
+		{
+		}
 	}
-	}
-		return (0);
+	return (0);
 }

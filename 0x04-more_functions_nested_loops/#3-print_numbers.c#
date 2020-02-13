@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+/**
+ * print_numbers: prints the numbers, from 0 to 9
+ * The character to print
+ * @s: char
+ * Return: On success 1.
+ * On error, -1 is returned, and error is set appropriately.
+ */
+
+void print_numbers(void)
+{
+	char s;
+
+	for (s = '0'; s <= 9; s++)
+	{
+		_putchar(s);
+	}
+}

@@ -10,17 +10,4 @@
 int _isupper(int c)
 {
 
-char p;
-
-for (p = 'A'; p <= 'Z'; p++)
-	{
-	if (c == p)
-		{
-		return (1);
-		}
-	else
-	{
-	}
-	}
-		return (0);
 }

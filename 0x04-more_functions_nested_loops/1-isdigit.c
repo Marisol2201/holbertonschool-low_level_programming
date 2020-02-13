@@ -11,7 +11,6 @@ int _isdigit(int c)
 {
 	char p;
 
-	x = (0);
 	for (p = '0'; p < '9'; p++)
 	{
 		if (c == p)

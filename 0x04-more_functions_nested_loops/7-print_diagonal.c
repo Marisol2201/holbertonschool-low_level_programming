@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_line - writes the character c to stdout
+ * print_diagonal - writes the character c to stdout
  * @n: The character to print
  *
  * Return: On success 1.
@@ -9,11 +9,18 @@
  */
 void print_diagonal(int n)
 {
-int i;
+	int a, b;
 
-	for (i = 0; i < n; i++)
+	if (n <= 0)
+		_putchar('\n');
+	for (a = 0; a < n; a++)
 	{
-		_putchar(92);
+		for (b = 0; b < a; b++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
 	}
-_putchar('\n');
+
 }

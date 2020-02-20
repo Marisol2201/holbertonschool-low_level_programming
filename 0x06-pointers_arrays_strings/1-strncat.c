@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * swap_int - check the code for Holberton School students.
+ * _strncat - check the code for Holberton School students.
  * @dest: The character to print
  * @src: The character to print
  * @n: The character to print

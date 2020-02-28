@@ -25,11 +25,11 @@ int _natural_square(int a, int b)
 
 int _sqrt_recursion(int n)
 {
- 	if (n == 1)
- 		return (1);
- 	if (n == 0)
- 		return (0);
- 	if (n  < 1)
- 		return (-1);
- 	return (_natural_square(n, 1));
+	if (n == 1)
+		return (1);
+	if (n == 0)
+		return (0);
+	if (n  < 1)
+		return (-1);
+	return (_natural_square(n, 1));
 }

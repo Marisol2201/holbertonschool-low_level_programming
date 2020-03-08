@@ -2,28 +2,30 @@
 
 Mandatory
 
-0-reset_to_98.c - function that takes a pointer to an int as parameter and updates the value it points to to 98.
+0-isupper.c - function that checks for uppercase character.
 
-1-swap.c - function that swaps the values of two integers.
+1-isdigit.c - function that checks for a digit (0 through 9).
 
-2-strlen.c - function that returns the length of a string.
+2-mul.c - function that multiplies two integers.
 
-3-puts.c - function that prints a string, followed by a new line, to stdout.
+3-print_numbers.c - function that prints the numbers, from 0 to 9, followed by a new line.
 
-4-print_rev.c - function that prints a string, in reverse, followed by a new line.
+4-print_most_numbers.c - function that prints the numbers, from 0 to 9, except 2 and 4, followed by a new line.
 
-5-rev_string.c - function that reverses a string.
+5-more_numbers.c - function that prints the numbers, from 0 to 14, followed by a new line 10 times.
 
-6-puts2.c - function that prints one char out of 2 of a string, followed by a new line.
+6-print_line.c - function that draws a straight line of length n in the terminal, followed by a new line.
 
-7-puts_half.c - function that prints half of a string, followed by a new line.
+7-print_diagonal.c - function that draws a diagonal line of length n in the terminal.
 
-8-print_array.c - function that prints n elements of an array of integers, followed by a new line.
+8-print_square.c - function that prints a square of size n, followed by a new line.
 
-9-strcpy.c - function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+9-fizz_buzz.c - prints the numbers from 1 to 100, separated by a space, followed by a new line. For multiples of three print Fizz instead of the number. For the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
+
+10-print_triangle.c - function that prints a triangle of size n, followed by a new line.
 
 Advanced
 
-100-atoi.c - converts a string to an integer.
+100-prime_factor.c - finds and prints the largest prime factor of the number 612852475143, followed by a new line.
 
-101-keygen.c - generates random valid passwords for the program 101-crackme.
+101-print_number.c - function that prints an integer.

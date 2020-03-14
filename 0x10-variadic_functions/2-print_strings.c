@@ -4,12 +4,12 @@
 
 /**
  * print_strings - check the code for Holberton School students.
- * @format: The character to print
- * The character to print
+ * @separator: The character to print
+ * @n: The character to print
  * Return: Always 0.
  */
 
-void print_all(const char * const format, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list list;

@@ -3,6 +3,13 @@
 
 #include <stdarg.h>
 
+/**
+ * struct pter - print type with corresponding print function
+ * @test: print type
+ * @printer: print function
+ *
+ */
+
 typedef struct pter
 {
 	char *test;

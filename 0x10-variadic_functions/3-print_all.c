@@ -71,6 +71,7 @@ void print_all(const char * const format, ...)
 	va_start(arg, format);
 
 	i = 0;
+	separator = "";
 	while (format && format[i])
 	{
 		j = 0;
@@ -78,11 +79,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == types[j].test[0])
 			{
+				printf("%s", separator);
 				types[j].printer(arg);
 				separator = ", ";
-				if (format[i + 1] == '\0')
-					separator = "";
-				printf("%s", separator);
 			}
 			j++;
 		}

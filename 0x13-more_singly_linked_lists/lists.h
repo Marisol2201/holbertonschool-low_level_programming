@@ -1,3 +1,6 @@
+#ifndef _LISTS_H_
+#define _LISTS_H_
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -6,6 +9,7 @@
  * Description: singly linked list node structure
  * for Holberton project
  */
+
 typedef struct listint_s
 {
 	int n;
@@ -24,3 +28,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
+
+#endif

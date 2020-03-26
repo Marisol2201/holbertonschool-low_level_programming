@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 
 	result = n;
-	for (count = 0; result; count++)
+	for (count = 0; result > 0; count++)
 		result >>= 1; /*equivalent to: result = result / 2*/
 	for (count--; count >= 0; count--)
 	{

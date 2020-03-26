@@ -10,21 +10,14 @@
 
 void print_binary(unsigned long int n)
 {
-	int count, num;
-	unsigned int result;
+	unsigned long int i = 1;
 
-	if (n == 0)
-		_putchar('0');
-
-	result = n;
-	for (count = 0; result > 0; count++)
-		result >>= 1; /*equivalent to: result = result / 2*/
-	for (count--; count >= 0; count--)
+	if (n > 1)
 	{
-		num = n >> count; /*equivalent to: n / (2 ^ count)*/
-		if (num & 1)
-			_putchar('1');
-		else
-			_putchar('0');
+		print_binary(n >> 1);
 	}
+	if ((n & i) == 1)
+		_putchar('1');
+	if ((n & i) == 0)
+		_putchar('0');
 }

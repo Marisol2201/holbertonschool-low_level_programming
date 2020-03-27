@@ -2,10 +2,10 @@
 #include "holberton.h"
 
 /**
- * set_bit - function that sets the value of a bit to 1 at a given index.
- * @n: number to set
- * @index: position
- * Return: 1 if it worked, or -1 if an error occurred
+ * flip_bits - returns number of bits to flip to go from one number to other
+ * @n: first number
+ * @m: second number
+ * Return: number of bits you would need to flip
  */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)

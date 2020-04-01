@@ -9,8 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, len, bytes_write, bytes_read, bytes_close;
+	int file_from, file_to, len, bytes_close;
 	char buffer[1024];
+	ssize_t bytes_write, bytes_read;
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -22,19 +23,21 @@ int main(int argc, char *argv[])
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
-			argv[1]), exit(98);
+			argv[1]);
+			exit(98);
 
 	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (file_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 
-	bytes_read = read(file_from, buffer, len);
+	bytes_read = read(file_from, buffer, 1024);
 	if (bytes_read == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
-			argv[1]), exit(98);
+			argv[1]);
+	                exit(98);
 
-	bytes_write = write(file_to, buffer, len);
+	bytes_write = write(file_to, buffer, 1024);
 	if (bytes_write == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);

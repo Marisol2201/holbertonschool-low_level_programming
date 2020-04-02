@@ -9,38 +9,35 @@
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, len, bytes_close;
+	int file_from, file_to, bytes_write, bytes_read, bytes_close;
 	char buffer[1024];
-	ssize_t bytes_write, bytes_read;
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 
-	for (len = 0; len < 1024; len++)
-		buffer[len] = 0;
-
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
-			argv[1]);
-			exit(98);
+			argv[1]), exit(98);
 
 	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (file_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 
-	bytes_read = read(file_from, buffer, 1024);
-	if (bytes_read == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
-			argv[1]);
-	                exit(98);
+	for (bytes_read = 1024; bytes_read == 1024;)
+	{
+		bytes_read = read(file_from, buffer, 1024);
+		if (bytes_read == -1)
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
+				argv[1]), exit(98);
 
-	bytes_write = write(file_to, buffer, 1024);
-	if (bytes_write == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
+		bytes_write = write(file_to, buffer, 1024);
+		if (bytes_write == -1)
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
+				argv[2]), exit(99);
+	}
 
 	bytes_close = close(file_from);
 	if (bytes_close == -1)

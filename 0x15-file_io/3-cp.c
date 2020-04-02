@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, r, w, c;
+	int file_from, file_to, r, w, c, i;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -26,7 +26,8 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
 			argv[2]), exit(99);
 
-	for (r = 1024; r == 1024;)
+	for (i = 0; i < 1024; i++)
+		buffer[i] = 0;
 	{
 		r = read(file_from, buffer, 1024);
 		if (r == -1)

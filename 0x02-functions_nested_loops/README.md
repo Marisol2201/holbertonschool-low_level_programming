@@ -1,39 +1,41 @@
-0x02. C - Functions, nested loops
+## 0x02. C - Functions, nested loops
 
-Mandatory
+**Mandatory**
 
-0-holberton.c - prints Holberton, followed by a new line.
+- _putchar:
+  - Write a program that prints Holberton, followed by a new line.
+- I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game:
+  - Write a function that prints the alphabet, in lowercase, followed by a new line.
+- 10 x alphabet:
+  - Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
+- islower:
+  - Write a function that checks for lowercase character.
+- isalpha:
+  - Write a function that checks for alphabetic character.
+- Sign:
+  - Write a function that prints the sign of a number.
+- There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you:
+  - Write a function that computes the absolute value of an integer.
+- There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important:
+  - Write a function that prints the last digit of a number.
+- I'm federal agent Jack Bauer, and today is the longest day of my life:
+  - Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+- Learn your times table:
+  - Write a function that prints the 9 times table, starting with 0.
+- a + b:
+  - Write a function that adds two integers and returns the result.
+- Holberton School, 98 Battery Street, the OG:
+  - Write a function that prints all natural numbers from n to 98, followed by a new line.
 
-1-alphabet.c - function that prints the alphabet, in lowercase, followed by a new line.
+**Advanced**
 
-2-print_alphabet_x10.c - function that prints 10 times the alphabet, in lowercase, followed by a new line.
-
-3-islower.c - function that checks for lowercase character.
-
-4-isalpha.c - function that checks for alphabetic character.
-
-5-sign.c - function that prints the sign of a number.
-
-6-abs.c - function that computes the absolute value of an integer.
-
-7-print_last_digit.c - function that prints the last digit of a number.
-
-8-24_hours.c - function that prints every minute of the day, starting from 00:00 to 23:59.
-
-9-times_table.c - function that prints the 9 times table, starting with 0.
-
-10-add.c - function that adds two integers and returns the result.
-
-11-print_to_98.c - function that prints all natural numbers from n to 98, separated by a comma, followed by a new line.
-
-Advanced
-
-100-times_table.c - function that prints the n times table, starting with 0, if 0 <= n <= 15.
-
-101-natural.c - computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line. Allowed to use the standard library.
-
-102-fibonacci.c - prints the first 50 Fibonacci numbers, starting with 1 and 2, separated by comma, followed by a new line. Allowed to use the standard library.
-
-103-fibonacci.c - finds and prints the sum of the even-valued terms in the Fibonacci sequence whose values do not exceed 4,000,000, followed by a new line. Allowed to use the standard library.
-
-104-fibonacci.c - finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line. Allowed to use the standard library.
+- The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself:
+  - Write a function that prints the n times table, starting with 0.
+- Nature made the natural numbers; All else is the work of women:
+  - Write a program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
+- In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A:
+  - Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
+- Even Liber Abbaci:
+  - By considering the terms in the Fibonacci sequence whose values do not exceed 4,000,000, write a program that finds and prints the sum of the even-valued terms, followed by a new line.
+- In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+:
+  - Write a program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.

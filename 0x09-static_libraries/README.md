@@ -1,9 +1,10 @@
-0x09. C - Static libraries
+## 0x09. C - Static libraries
 
-Mandatory
+**Mandatory**
 
-libholberton.a - archive library containing various functions from previous projects.
-
-holberton.h - header file with all of the prototypes for libholberton.a.
-
-create_static_lib.sh - script that creates a static library, liball.a with all of the functions listed in holberton.h.
+- A library is not a luxury but one of the necessities of life:
+  - Create the static library libholberton.a
+- Without libraries what have we? We have no past and no future:
+  - Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
+- Either write something worth reading or do something worth writing:
+  - Write a blog post on C static libraries.

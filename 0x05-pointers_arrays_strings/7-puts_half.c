@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * puts_half - check the code for Holberton School students.
- * The character to print
- * @str: The character to print
- * Return: Always 0.
+ * puts_half - prints half of a string, followed by a new line.
+ *
+ * @str: string to print
+ * Return: void
  */
 
 void puts_half(char *str)

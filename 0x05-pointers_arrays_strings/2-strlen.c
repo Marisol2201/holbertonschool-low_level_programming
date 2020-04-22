@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strlen - writes the character c to stdout
- * @s: The character to print
- * Return: n
- * On error, -1 is returned, and error is set appropriately.
+ * _strlen - returns the length of a string.
+ * @s: string to find length of
+ * Return: length of a string (s)
+ *
  */
 
 int _strlen(char *s)

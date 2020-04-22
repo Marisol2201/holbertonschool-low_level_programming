@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * rev_string - check the code for Holberton School students.
- * @s: The character to print
+ * rev_string - reverses a string.
+ * @s: string to reverse
  *
- * Return: Always 0.
+ * Return: void
  */
 void rev_string(char *s)
 {

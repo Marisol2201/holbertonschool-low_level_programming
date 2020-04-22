@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _puts - writes the character c to stdout
- * @str: The character to print
- * Return
- * On error, -1 is returned, and error is set appropriately.
+ * _puts - prints a string, followed by a new line, to stdout.
+ * @str: string to print
+ * Return: void
+ *
  */
 
 void _puts(char *str)

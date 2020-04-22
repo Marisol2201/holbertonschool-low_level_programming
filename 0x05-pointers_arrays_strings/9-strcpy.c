@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strcpy - check the code for Holberton School students.
- * @dest: character
- * @src: character
- * Return: Always 0.
+ * _strcpy - copies the string pointed to by src
+ * @dest: destination of copy
+ * @src: source to copy
+ * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {

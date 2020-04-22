@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * puts2 - check the code for Holberton School students.
- * @str: The character to print
- * The character to print
- * Return: Always 0.
+ * puts2 - prints every other character of a  string to stdout
+ * @str: string to print
+ *
+ * Return: void
  */
 
 void puts2(char *str)

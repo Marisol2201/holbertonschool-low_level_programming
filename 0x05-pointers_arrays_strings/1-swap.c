@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * swap_int - check the code for Holberton School students.
- * @a: The character to print
- * @b: The character to print
- * Return: Always 0.
+ * swap_int - swaps the values of two integers.
+ * @a: pointer to int to be swapped
+ * @b: pointer to other int to be swapped
+ * Return: void
  */
 
 void swap_int(int *a, int *b)

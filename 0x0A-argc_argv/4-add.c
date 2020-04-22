@@ -3,9 +3,9 @@
 #include <ctype.h>
 
 /**
- * main - check the code for Holberton School students.
- * @argc: The character to print
- * @argv: The character to print
+ * main - adds positive numbers.
+ * @argc: size of argv array and number of command line arguments
+ * @argv: An array of size argc
  * Return: Always 0.
  */
 

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- * @argc: The character to print
- * @argv: The character to print
+ * main - program that prints all arguments it receives.
+ * @argc: size of argv array and number of command line arguments
+ * @argv: An array of size argc
  * Return: Always 0.
  */
 

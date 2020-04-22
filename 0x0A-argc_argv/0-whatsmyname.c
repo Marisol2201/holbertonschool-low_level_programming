@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program to print name of program
+ * main - program that prints its name, followed by a new line.
  * @argc: size of argv array and number of command line arguments
  * @argv: An array of size argc
  * Return: always successful

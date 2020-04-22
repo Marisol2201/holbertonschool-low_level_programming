@@ -1,19 +1,19 @@
 #include "holberton.h"
 
 /**
- * print_line - writes the character c to stdout
- * @n: The character to print
+ * print_line - draws a straight line in the terminal.
+ * @n: number of times the character _ should be printed
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: void
+ *
  */
 void print_line(int n)
 {
-int i;
+	int i;
 
 	for (i = 0; i < n; i++)
 	{
 		_putchar('_');
 	}
-_putchar('\n');
+	_putchar('\n');
 }

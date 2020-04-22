@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * print_triangle - prints a triangle to the terminal
- * @size: the size of the triangle
- *
+ * print_triangle - prints a triangle, followed by a new line.
+ * @size: size of the triangle
+ * Return: void
  */
 
 void print_triangle(int size)

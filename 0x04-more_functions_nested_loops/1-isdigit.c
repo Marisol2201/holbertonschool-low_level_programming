@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _isdigit - writes the character c to stdout
- * @c: The character to print
+ * _isdigit - checks for a digit (0 through 9).
+ * @c: character to check
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: 1 if c is a digit 0 otherwise
+ *
  */
 int _isdigit(int c)
 {

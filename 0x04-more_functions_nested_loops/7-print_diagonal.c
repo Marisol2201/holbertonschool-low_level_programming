@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - writes the character c to stdout
- * @n: The character to print
+ * print_diagonal - draws a diagonal line on the terminal.
+ * @n: number of times the character \ should be printed
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: void
  */
 void print_diagonal(int n)
 {

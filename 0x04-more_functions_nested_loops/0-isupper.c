@@ -1,26 +1,25 @@
 #include <stdio.h>
 
 /**
- * _isupper - writes the character c to stdout
- * @c: The character to print
+ * _isupper - checks for uppercase character.
+ * @c: int type number
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: 1 if uppercase, else 0
  */
 int _isupper(int c)
 {
 
-char p;
+	char p;
 
-for (p = 'A'; p <= 'Z'; p++)
+	for (p = 'A'; p <= 'Z'; p++)
 	{
-	if (c == p)
+		if (c == p)
 		{
-		return (1);
+			return (1);
 		}
-	else
-	{
+		else
+		{
+		}
 	}
-	}
-		return (0);
+	return (0);
 }

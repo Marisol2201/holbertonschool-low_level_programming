@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _memcpy - check the code for Holberton School students.
- * @dest: The character to print
- * @src: The character to print
- * @n: The character to print
- * Return: Always 0.
+ * _memcpy - copies memory area.
+ * @dest: memory space to be copied to from src
+ * @src: memory space to be copied to dest
+ * @n: unsigned int value of bytes to be copied from src to dest
+ * Return: pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)

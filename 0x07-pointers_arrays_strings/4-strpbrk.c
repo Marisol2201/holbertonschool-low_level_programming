@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * _strpbrk - check the code for Holberton School students.
- * @s: The character to print
- * @accept: The character to print
- * Return: Always 0.
+ * _strpbrk - searches a string for any of a set of bytes.
+ * @s: string to be searched
+ * @accept: string containing bytes to be searched for
+ * Return: pointer to the byte in s that matches one of the bytes in accept
+ * or NULL if no such byte is found
  */
 
 char *_strpbrk(char *s, char *accept)

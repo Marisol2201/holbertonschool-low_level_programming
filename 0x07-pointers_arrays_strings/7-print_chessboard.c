@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * print_chessboard - check the code for Holberton School students.
- * @a: The character to print
- * The character to print
- * Return: Always 0.
+ * print_chessboard - prints the chessboard.
+ * @a: chessboard array
+ *
+ * Return: void
  */
 
 void print_chessboard(char (*a)[8])

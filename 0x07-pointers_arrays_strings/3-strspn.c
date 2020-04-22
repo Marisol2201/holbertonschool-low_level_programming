@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strspn - check the code for Holberton School students.
- * @s: The character to print
- * @accept: The character to print
- * Return: Always 0.
+ * _strspn - gets the length of a prefix substring.
+ * @s: string to be checked
+ * @accept: prefix substring
+ * Return: number of bytes in the initial segment of s
  */
 
 unsigned int _strspn(char *s, char *accept)

@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * _strstr - check the code for Holberton School students.
- * @haystack: The character to print
- * @needle: The character to print
- * Return: Always 0.
+ * _strstr - locates a substring.
+ * @haystack: string to be looked through
+ * @needle: substring to be searched for in haystack
+ * Return: pointer to the beginning of the located substring
+ * or NULL if the substring is not found.
  */
 
 char *_strstr(char *haystack, char *needle)

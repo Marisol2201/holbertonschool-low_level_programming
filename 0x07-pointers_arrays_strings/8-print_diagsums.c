@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - check the code for Holberton School students.
- * @a: The character to print
- * @size: The character to print
- * Return: Always 0.
+ * print_diagsums - print the sum of two diagonals of a square matrix
+ * of integers
+ * @a: square matrix of integers
+ * @size: size of one side of the square matrix
+ * Return: void
  */
 
 void print_diagsums(int *a, int size)

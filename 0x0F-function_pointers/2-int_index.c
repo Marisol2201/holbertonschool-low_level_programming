@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * int_index - check the code for Holberton School students.
- * @array: The character to print
- * @size: The character to print
- * @cmp: The character to print
- * Return: Always 0.
+ * int_index - searches for an integer.
+ * @array: array to serch through
+ * @size: number of elements in the array array
+ * @cmp: pointer to the function to be used to compare values
+ * Return: first index for which cmp doesn't return 0, or -1
  */
 
 int int_index(int *array, int size, int (*cmp)(int))

@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * factorial - check the code for Holberton School students.
- * @n: The character to print
- * The character to print
- * Return: Always 0.
+ * factorial - returns the factorial of a given number.
+ * @n: integer to take factorial of
+ *
+ * Return: factorial of n, or -1 if n < 0
  */
 
 int factorial(int n)

@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * is_prime - check the code for Holberton School students.
- * @a: The character to print
- * @b: The character to print
- * Return: Always 0.
+ * is_prime - returns 1 if the input integer is a prime number
+ * @a: factor check
+ * @b: possible prime number
+ * Return: 1 if prime, 0 if not
  */
 
 int is_prime(int a, int b)
@@ -17,10 +17,10 @@ int is_prime(int a, int b)
 }
 
 /**
- * is_prime_number - check the code for Holberton School students.
- * @n: The character to print
- * The character to print
- * Return: Always 0.
+ * is_prime_number - states if number is prime
+ * @n: number to check
+ *
+ * Return: 1 if prime, 0 if not
  */
 
 int is_prime_number(int n)

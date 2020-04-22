@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _natural_square - check the code for Holberton School students.
- * @a: The character to print
- * @b: The character to print
- * Return: Always 0.
+ * _natural_square - returns the natural square root of a number.
+ * @a: guess at sqrt
+ * @b: number to find sqrt of
+ * Return: 1 or sqrt of c
  */
 
 int _natural_square(int a, int b)
@@ -17,10 +17,10 @@ int _natural_square(int a, int b)
 }
 
 /**
- * _sqrt_recursion - check the code for Holberton School students.
- * @n: The character to print
- * The character to print
- * Return: Always 0.
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: integer to find sqrt of
+ *
+ * Return: natural square root or -1
  */
 
 int _sqrt_recursion(int n)

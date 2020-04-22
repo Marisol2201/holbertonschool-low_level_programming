@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _pow_recursion - check the code for Holberton School students.
- * @x: The character to print
- * @y: The character to print
- * Return: Always 0.
+ * _pow_recursion - returns the value of x raised to the power of y.
+ * @x: base number
+ * @y: exponent
+ * Return: x ^ y or -1 if y < 0
  */
 
 int _pow_recursion(int x, int y)

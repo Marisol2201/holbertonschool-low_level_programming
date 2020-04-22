@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _print_rev_recursion - check the code for Holberton School students.
- * @s: The character to print
- * The character to print
- * Return: Always 0.
+ * _print_rev_recursion - prints a string in reverse.
+ * @s: string to be printed
+ *
+ * Return: void
  */
 
 void _print_rev_recursion(char *s)

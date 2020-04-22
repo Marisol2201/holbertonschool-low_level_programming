@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _puts_recursion - check the code for Holberton School students.
- * @s: The character to print
- * The character to print
- * Return: Always 0.
+ * _puts_recursion - prints a string, followed by a new line.
+ * @s: string to be printed
+ *
+ * Return: void
  */
 
 void _puts_recursion(char *s)

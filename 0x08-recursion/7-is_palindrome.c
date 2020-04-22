@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * string_length - check the code for Holberton School students.
- * @st: The character to print
- * The character to print
- * Return: Always 0.
+ * string_length - returns 1 if a string is a palindrome and 0 if not.
+ * @st: string to be parsed through
+ *
+ * Return: length of string, excluding null terminator
  */
 
 int string_length(char *st)
@@ -15,11 +15,11 @@ int string_length(char *st)
 }
 
 /**
- * check_letters - check the code for Holberton School students.
- * @str: The character to print
- * @i: The character to print
- * @j: The character to print
- * Return: Always 0.
+ * check_letters - resolve palidrome
+ * @str: string to be checked as a palindrome
+ * @i: length of string
+ * @j: iteration variable, tracking distance from s
+ * Return: 1 if string is palindrome, 0 if not
  */
 
 int check_letters(char *str, int i, int j)
@@ -32,10 +32,10 @@ int check_letters(char *str, int i, int j)
 }
 
 /**
- * is_palindrome - check the code for Holberton School students.
- * @s: The character to print
- * The character to print
- * Return: Always 0.
+ * is_palindrome - check if palidrome
+ * @s: string to check
+ *
+ * Return: 1 if palindrome, 0 if not
  */
 
 int is_palindrome(char *s)

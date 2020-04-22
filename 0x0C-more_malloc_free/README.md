@@ -1,17 +1,19 @@
-0x0C. C - More malloc, free
+## 0x0C. C - More malloc, free
 
-Mandatory
+**Mandatory**
 
-0-malloc_checked.c - function that allocates memory using malloc.
+- Trust no one:
+  - Write a function that allocates memory using malloc.
+- string_nconcat:
+  - Write a function that concatenates two strings.
+- _calloc:
+Write a function that allocates memory for an array, using malloc.
+- array_range:
+  - Write a function that creates an array of integers.
 
-1-string_nconcat.c - function that concatenates two strings.
+**Advanced**
 
-2-calloc.c - function that allocates memory for an array, using malloc.
-
-3-array_range.c - function that creates an array of integers.
-
-Advanced
-
-100-realloc.c - function that reallocates a memory block using malloc and free.
-
-101-mul.c - multiplies two positive numbers, stored as strings.
+- _realloc:
+  - Write a function that reallocates a memory block using malloc and free
+- We must accept finite disappointment, but never lose infinite hope:
+  - Write a program that multiplies two positive numbers.

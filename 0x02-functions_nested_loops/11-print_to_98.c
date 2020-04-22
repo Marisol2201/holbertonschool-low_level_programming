@@ -10,15 +10,15 @@
 
 void print_below_98(int a)
 {
-int c;
+	int c;
 
-for (c = a; c <= 98; c++)
-{
-if (c != 98)
-printf("%d, ", c);
-else
-printf("%d\n", c);
-}
+	for (c = a; c <= 98; c++)
+	{
+		if (c != 98)
+			printf("%d, ", c);
+		else
+			printf("%d\n", c);
+	}
 }
 
 /**
@@ -31,19 +31,19 @@ printf("%d\n", c);
 
 void print_above_98(int d)
 {
-int b;
+	int b;
 
-for (b = d;  b >= 98; b--)
-{
-if (b != 98)
-printf("%d, ", b);
-else
-printf("%d\n", b);
-}
+	for (b = d;  b >= 98; b--)
+	{
+		if (b != 98)
+			printf("%d, ", b);
+		else
+			printf("%d\n", b);
+	}
 }
 
 /**
- * print_to_98 - check for numbers below 98
+ * print_to_98 - check for numbers below or equal to 98
  * @n: int type
  *
  *
@@ -53,8 +53,8 @@ printf("%d\n", b);
 
 void print_to_98(int n)
 {
-if (n <= 98)
-print_below_98(n);
-else
-print_above_98(n);
+	if (n <= 98)
+		print_below_98(n);
+	else
+		print_above_98(n);
 }

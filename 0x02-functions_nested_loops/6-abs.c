@@ -2,22 +2,22 @@
 #include <stdio.h>
 
 /**
- * _abs - writes the character c to stdout
- * @n: The character to print
+ * _abs - computes the absolute value of an integer.
+ * @n: integer to check
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: absolute value of integer (n)
+ *
  */
 
 int _abs(int n)
 {
-if (n >= 0)
-{
-return (n);
-}
-else
-{
-n = n * -1;
-return (n);
-}
+	if (n >= 0)
+	{
+		return (n);
+	}
+	else
+	{
+		n = n * -1;
+		return (n);
+	}
 }

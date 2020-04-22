@@ -1,24 +1,24 @@
 #include "holberton.h"
 
 /**
- * _islower - writes the character c to stdout
- * @c: The character to print
+ * _islower - checks for lowercase character.
+ * @c: character to check
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: 1 if c is lowercase; 0 otherwise
+ *
  */
 int _islower(int c)
 {
 
-char m;
-int s = 0;
+	char m;
+	int s = 0;
 
-for (m = 'a'; m <= 'z'; m++)
-{
-if (c == m)
-{
-s = 1;
-}
-}
-return (s);
+	for (m = 'a'; m <= 'z'; m++)
+	{
+		if (c == m)
+		{
+			s = 1;
+		}
+	}
+	return (s);
 }

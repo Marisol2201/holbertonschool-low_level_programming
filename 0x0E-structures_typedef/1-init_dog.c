@@ -4,10 +4,10 @@
 /**
  * init_dog - initialize function for struct dog
  * @d: pointer to dog struct
- * @name: char type
- * @age: float type
- * @owner: char type
- * Return: return pointer to struct
+ * @name: pointer to the name of the dog
+ * @age: age of dog
+ * @owner: pointer to owner of dog
+ * Return: void
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)

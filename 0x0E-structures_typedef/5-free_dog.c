@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- * free_dog - check the code for Holberton School students.
- * @d: Character
- * Return: Always 0.
+ * free_dog - frees dogs.
+ * @d: pointer to dog to free
+ * Return: void
  */
 
 void free_dog(dog_t *d)

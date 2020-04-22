@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * string_toupper - check the code for Holberton School students.
- * @x: The character to print
- * The character to print
- * Return: Always 0.
+ * string_toupper - changes all lowercase letters of a string to uppercase.
+ * @x: string to be changed
+ *
+ * Return: Updated string
  */
 
 char *string_toupper(char *x)

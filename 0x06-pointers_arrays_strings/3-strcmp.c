@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strcmp - check the code for Holberton School students.
- * @s1: The character to print
- * @s2: The character to print
- * Return: Always 0.
+ * _strcmp - compares two strings.
+ * @s1: first string
+ * @s2: second string
+ * Return: 0 if s1 and s2 are the same
  */
 
 int _strcmp(char *s1, char *s2)

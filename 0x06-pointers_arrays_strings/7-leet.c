@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * leet - check the code for Holberton School students.
- * @s: The character to print
- * The character to print
- * Return: Always 0.
+ * leet - encodes a string into 1337.
+ * @s: string to be encoded
+ *
+ * Return: pointer to encoded string
  */
 
 char *leet(char *s)

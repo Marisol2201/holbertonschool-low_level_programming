@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * cap_string - check the code for Holberton School students.
- * @s: The character to print
- * The character to print
- * Return: Always 0.
+ * cap_string - capitalizes all words of a string.
+ * @s: string to be processed
+ *
+ * Return: capitalized string
  */
 
 char *cap_string(char *s)

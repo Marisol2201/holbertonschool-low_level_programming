@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * rot13 - check the code for Holberton School students.
- * @s: The character to print
- * The character to print
- * Return: Always 0.
+ * rot13 - encodes a string using rot13.
+ * @s: string to be encoded
+ *
+ * Return: pointer to encoded string
  */
 
 char *rot13(char *s)

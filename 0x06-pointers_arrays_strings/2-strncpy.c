@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _strncpy - check the code for Holberton School students.
- * @dest: The character to print
- * @src: The character to print
- * @n: The character to print
- *Return: Always 0.
+ * _strncpy - copies a string.
+ * @dest: string to copy to
+ * @src: string to be copied
+ * @n: max number of bytes to be copied
+ *Return: copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)

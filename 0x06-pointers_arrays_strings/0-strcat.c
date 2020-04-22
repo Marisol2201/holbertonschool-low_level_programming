@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _strcat - check the code for Holberton School students.
- * @src: The character to print
- * @dest: The character to print
- * Return: Always 0.
+ * _strcat - concatenates two strings.
+ * @src: string to append to dest
+ * @dest: string to append by src
+ * Return: a pointer to the resulting string dest
  */
 
 char *_strcat(char *dest, char *src)

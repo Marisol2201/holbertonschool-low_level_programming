@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * print_number - check the code for Holberton School students.
- * @n: The character to print
- * The character to print
- * Return: Always 0.
+ * print_number - prints an integer.
+ * @n: integer to print
+ *
+ * Return: void
  */
 
 void print_number(int n)

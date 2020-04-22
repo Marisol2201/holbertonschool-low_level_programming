@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * create_array - check the code for Holberton School students.
- * @size: The character to print
- * @c: The character to print
- * Return: Always a.
+ * create_array - creates array of chars & initializes it with a specific char.
+ * @size: size of array to be created
+ * @c: char to initialize array with
+ * Return: pointer to the array or NULL if malloc fails
  */
 
 char *create_array(unsigned int size, char c)

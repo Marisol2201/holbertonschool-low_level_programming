@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * str_concat - check the code for Holberton School students.
- * @s1: The character to print
- * @s2: The character to print
- * Return: Always a.
+ * str_concat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * Return: pointer to newly allocated space in memory, or NULL if error
  */
 
 char *str_concat(char *s1, char *s2)

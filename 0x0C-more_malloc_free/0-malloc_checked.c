@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - check the code for Holberton School students.
- * @b: The character to print
- * The character to print
- * Return: Always 0.
+ * malloc_checked - allocates memory using malloc.
+ * @b: memory to allocate
+ *
+ * Return: pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)

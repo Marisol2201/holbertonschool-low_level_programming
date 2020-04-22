@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - check the code for Holberton School students.
- * @s1: The character to print
- * @s2: The character to print
- * @n: The character to print
- * Return: Always 0.
+ * string_nconcat - concatenates two strings.
+ * @s1: first string to copy
+ * @s2: second string to copy
+ * @n: number of bytes of s2 to copy
+ * Return: char pointer to newly allocated place in memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)

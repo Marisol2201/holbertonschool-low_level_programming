@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * array_range - check the code for Holberton School students.
- * @min: The character to print
- * @max: The character to print
- * The character to print
- * Return: Always 0.
+ * array_range - creates an array of integers.
+ * @min: first integer number
+ * @max: last integer number
+ *
+ * Return: pointer to the newly created array
  */
 
 int *array_range(int min, int max)

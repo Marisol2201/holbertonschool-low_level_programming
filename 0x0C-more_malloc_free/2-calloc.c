@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _calloc - check the code for Holberton School students.
- * @nmemb: The character to print
- * @size: The character to print
- * The character to print
- * Return: Always 0.
+ * _calloc - allocates memory for an array, using malloc.
+ * @nmemb: number of elements in the array
+ * @size: size in bytes of the elements
+ *
+ * Return: void pointer to allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)

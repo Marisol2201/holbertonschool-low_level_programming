@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _realloc - check the code for Holberton School students.
- * @old_size: The character to print
- * @new_size: The character to print
- * @ptr: The character to print
- * Return: Always 0.
+ * _realloc - reallocates a memory block using malloc and free
+ * @old_size: size of allocated space for ptr
+ * @new_size: size of newly allocated space
+ * @ptr: pointer to previously allocated memory
+ * Return: pointer to newly allocated memory, or NULL if failure
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)

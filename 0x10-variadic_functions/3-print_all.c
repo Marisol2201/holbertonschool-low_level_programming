@@ -4,8 +4,8 @@
 
 /**
  * print_int - f that prints ints
- * @arg: type
- * Return: always 0
+ * @arg: int to print
+ * Return: void
  */
 void print_int(va_list arg)
 {
@@ -14,8 +14,8 @@ void print_int(va_list arg)
 
 /**
  * print_char - f that prints char
- * @arg: type
- * Return: always successful
+ * @arg: char to print
+ * Return: void
  */
 
 void print_char(va_list arg)
@@ -24,8 +24,8 @@ void print_char(va_list arg)
 }
 /**
  * print_float - f that prints floats
- * @arg: type
- * Return: always 0
+ * @arg: float to print
+ * Return: void
  */
 void print_float(va_list arg)
 {
@@ -34,7 +34,7 @@ void print_float(va_list arg)
 
 /**
  * print_string - function that prints string
- * @arg: type
+ * @arg: string to print
  * Return: always 0
  */
 void print_string(va_list arg)

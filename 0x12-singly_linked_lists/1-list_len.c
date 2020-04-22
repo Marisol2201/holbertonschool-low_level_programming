@@ -5,8 +5,8 @@
 
 /**
  * list_len - f that returns the number of elements in a linked list_t list
- * @h: pointer of type list_t
- * Return: Always 0.
+ * @h: pointer to the start of the linked list
+ * Return: number of elements in the linked list
  */
 
 size_t list_len(const list_t *h)

@@ -5,9 +5,9 @@
 
 /**
  * add_node - f that adds a new node at the beginning of a list_t list
- * @str: pointer to string input
+ * @str: pointer to string input (to to add to the new node)
  * @head: pointer to pointer of list_t struct type
- * Return: Always 0.
+ * Return: pointer to the new node
  */
 
 list_t *add_node(list_t **head, const char *str)

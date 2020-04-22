@@ -6,9 +6,9 @@
 
 /**
  * add_node_end - function that adds a new node at the end of a list_t list
- * @head: dasfasfs
- * @str: asdasdasd
- * Return: pointer to the new node
+ * @head: pointer to pointer of list_t struct type
+ * @str: string to add to the new node
+ * Return: address of the new element, or NULL if it failed
  */
 
 list_t *add_node_end(list_t **head, const char *str)

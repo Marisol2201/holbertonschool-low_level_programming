@@ -5,9 +5,9 @@
 
 /**
  * print_list - function to print a list.
- * @h: pointer of type list_t
- * The character to print
- * Return: Always 0.
+ * @h: pointer to the start of the list
+ *
+ * Return: number of nodes in the list
  */
 
 size_t print_list(const list_t *h)

@@ -31,22 +31,17 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (new);
 	}
 
-	while (current)
+	while (current->next)
 	{
-		if (count == (idx - 1)) /*valor anterior a la posición*/
+		if (count == idx) /*valor anterior a la posición*/
 		{
+			new->prev = current;
 			new->next  = current->next;
 			current->next = new;
 			return (new);
 		}
 		count++;
 		current = current->next;
-	}
-	if (count == idx - 1)
-	{
-		new->prev = current;
-		new->next = NULL;
-		current->next = new;
 	}
 	return (NULL);
 }

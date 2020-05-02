@@ -14,14 +14,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (h == NULL)
 		return (NULL);
-
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
 
 	current = *h;
 	new->n = n;
-
 	if (idx == 0)
 	{
 		*h = new;
@@ -30,18 +28,25 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current->prev = new;
 		return (new);
 	}
-
-	while (current->next)
+	while (current)
 	{
-		if (count == idx) /*valor anterior a la posición*/
+		if (count == idx)
 		{
-			new->prev = current;
 			new->next  = current->next;
 			current->next = new;
 			return (new);
 		}
 		count++;
 		current = current->next;
+	}
+	while (current && current->next)
+	{
+		current = current->next;
+		new->prev = current;
+		new->next = NULL;
+		if (current)
+			current->next = new;
+		return (new);
 	}
 	return (NULL);
 }

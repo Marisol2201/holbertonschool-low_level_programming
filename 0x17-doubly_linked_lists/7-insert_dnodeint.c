@@ -42,7 +42,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		count++;
 		current = current->next;
 	}
-	if (count == idx)
+	if (count == idx - 1)
 	{
 		new->prev = current;
 		new->next = NULL;

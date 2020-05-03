@@ -4,49 +4,45 @@
  * insert_dnodeint_at_index - inserts a new node at a given position
  * @h: pointer to the head of a dlist
  * @idx: position
- * @n: data for new node
+ * @n: int(data)
  * Return: address of the new node, or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int count = 1;
-	dlistint_t *temp = NULL, *new = NULL;
+	dlistint_t *new, *current;
+	unsigned int count = 0;
 
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL || h == NULL)
 		return (NULL);
+
+	current = *h;
 	new->n = n;
-	temp = *h;
-	if (idx == 0)/*add node at beginnig*/
+	if (idx == 0) /*add node at the beginning of the list*/
 	{
 		*h = new;
-		new->next = temp;
+		new->next = current;
 		new->prev = NULL;
-		temp->prev = new;
+		current->prev = new;
 		return (new);
 	}
-	while (temp->next != NULL) /*add node at some position*/
+	while (current && current->next) /*node at the middle*/
 	{
 		if (count == idx)
 		{
-			new->prev = temp;
-			new->next = temp->next;
-			temp->next = new;
+			new->prev = current;
+			new->next = current->next;
+			current->next = new;
 			new->next->prev = new;
 		}
-		temp = temp->next;
+		current = current->next;
 		count++;
 	}
-	if (count == idx)/*add node at end*/
+	if (count == idx) /*node at the end*/
 	{
-		new->prev = temp;
+		new->prev = current;
 		new->next = NULL;
-		temp->next = new;
+		current->next = new;
 	}
-	if (count < idx)
-	{
-		free(new);
-		return (NULL);
-	}
-	return (new);
+	return (NULL);
 }

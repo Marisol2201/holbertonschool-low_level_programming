@@ -32,7 +32,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			new->prev = current;
 			new->next = current->next;
 			current->next = new;
-			new->next->prev = new;
 		}
 		current = current->next;
 		count++;

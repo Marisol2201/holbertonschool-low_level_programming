@@ -19,12 +19,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = malloc(sizeof(hash_node_t));
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
+	new_node->next = NULL;
 
-	/*Si no esta libre, entonces tenemos una colisión*/
 	if (!ht->array[index])
 		ht->array[index] = new_node;
 	else
 	{
+		/*Si no esta libre, entonces tenemos una colisión*/
 		new_node->next = ht->array[index];
 		new_node = ht->array[index];
 	}

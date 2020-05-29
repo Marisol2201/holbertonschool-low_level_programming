@@ -22,10 +22,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->key = strdup(key);
 
 	new_node->value = strdup(value);
-	if (!new_node->value)
-		return (0);
 
-	new_node = ht->array[index];
+	if (!ht->array[index])
+		ht->array[index] = new_node;
+	else
+	{
+		new_node->next = ht->array[index], ht->array[index] = new_node;
+	}
+	return (1);
 
 	return (1);
 }

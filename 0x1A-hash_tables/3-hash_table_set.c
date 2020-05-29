@@ -12,22 +12,22 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *new_node;
 
-	if (!ht || !key || !*key || !value)
+	if (!ht || !key)
 		return (0);
 
 	index = key_index((unsigned char *)key, ht->size);
 
 	new_node = malloc(sizeof(hash_node_t));
-
 	new_node->key = strdup(key);
-
 	new_node->value = strdup(value);
 
+	/*Si no esta libre, entonces tenemos una colisión.*/
 	if (!ht->array[index])
 		ht->array[index] = new_node;
 	else
 	{
-		new_node->next = ht->array[index], ht->array[index] = new_node;
+		new_node->next = ht->array[index];
+		new_node = ht->array[index];
 	}
 	return (1);
 }

@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	current = ht->array[index];
 
-	while (current != NULL)
+	while (current)
 	{
 		if (strcmp(current->key, key) == 0)
 		{/*se comporta igual que head, no se puede perder referencia*/
@@ -35,13 +35,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
 
-	if (!ht->array[index])
-		ht->array[index] = new_node;
-	else
-	{
-		/*Si no esta libre, entonces tenemos una colisión*/
-		new_node->next = ht->array[index];
-		new_node = ht->array[index];
-	}
+	new_node->next = ht->array[index];
+	ht->array[index] = new_node;
 	return (1);
 }

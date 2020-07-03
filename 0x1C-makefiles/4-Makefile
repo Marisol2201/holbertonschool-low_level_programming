@@ -1,28 +1,25 @@
-# all rule builds your executable
-# CC: the compiler to be used
-# SRC: the .c files
-# OBJ: the .o files
-# NAME: the name of the executable
-# RM: the program to delete files
-# CFLAGS: your favorite compiler flags: -Wall -Werror -Wextra -pedantic
-
-# clean: deletes all Emacs and Vim temporary files along with the executable
-# oclean: deletes the object files
-# fclean: deletes Emacs temporary files, the executable, and the object files
-# re: forces recompilation of all source files
-
 CC = gcc
-SRC = main.c holberton.c
+SRC = .c
+OBJ = .o
 NAME = holberton
-OBJ = $(SRC:.c=.o)
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+all: main$(OBJ) holberton$(OBJ) m.h
+	$(CC) main$(OBJ) holberton$(OBJ) -o $(NAME)
+
+main$(OBJ): main$(SRC)
+	$(CC) $(CFLAGS) -c -o main$(OBJ) main$(SRC)
+
+holberton$(OBJ): holberton$(SRC)
+	$(CC) $(CFLAGS) -c -o holberton$(OBJ) holberton$(SRC)
+
 clean:
 	$(RM) *~ $(NAME)
+	
 oclean:
-	$(RM) $(OBJ)
+	$(RM) main$(OBJ) holberton$(OBJ)
+
 fclean: clean oclean
+
 re: oclean all

@@ -1,0 +1,9 @@
+# all rule builds your executable
+# CC: the compiler to be used
+# SRC: the .c files
+
+CC = gcc
+SRC = main.c holberton.c
+
+all: $(SRC)
+	$(CC) $(SRC) -o holberton

@@ -5,7 +5,6 @@
 # NAME: the name of the executable
 # RM: the program to delete files
 # CFLAGS: your favorite compiler flags: -Wall -Werror -Wextra -pedantic
-
 # clean: deletes all Emacs and Vim temporary files along with the executable
 # oclean: deletes the object files
 # fclean: deletes Emacs temporary files, the executable, and the object files

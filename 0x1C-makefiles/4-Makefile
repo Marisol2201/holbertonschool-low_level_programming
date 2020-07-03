@@ -12,20 +12,26 @@
 # re: forces recompilation of all source files
 
 CC = gcc
-SRC = main.c holberton.c
+SRC = .c
+OBJ = .o
 NAME = holberton
-OBJ = $(SRC:.c=.o)
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+all: main$(OBJ) holberton$(OBJ) m.h
+	$(CC) main$(OBJ) holberton$(OBJ) -o $(NAME)
+
+main$(OBJ): main$(SRC)
+	$(CC) $(CFLAGS) -c -o main$(OBJ) main$(SRC)
+
+holberton$(OBJ): holberton$(SRC)
+	$(CC) $(CFLAGS) -c -o holberton$(OBJ) holberton$(SRC)
 
 clean:
 	$(RM) *~ $(NAME)
-
+	
 oclean:
-	$(RM) $(OBJ)
+	$(RM) main$(OBJ) holberton$(OBJ)
 
 fclean: clean oclean
 
